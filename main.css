@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('image/gradient-neon.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+nav {
+    display: flex;
+    background-color: #0000003b;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.titulo-nav {
+    padding-left: 60px;
+    display: flex;
+    align-items: center;
+    color: #FFF1D0;
+}
+
+.menu-nav {
+    padding-left: 50%;
+    display: flex;
+    align-items: center;
+
+}
+
+.menu-nav > a {
+    color: #FFF1D0;
+    padding-left: 30px;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: #ffffff60;
+    border-radius: 50px;
+    transition: 1000ms;
+}
+
+h1 {
+    color: #FFF1D0;
+    font-size: 50px;
+    font-family: "Open Sans", sans-serif;
+    margin-top: 100px;
+    padding-left: 60px;
+}
+
+h2 {
+    color: #FFF1D0;
+    font-size: 20px;
+    padding-left: 60px;
+    font-family: "Open Sans", sans-serif;
+
+}
+
+span {
+    height: 2px;
+    width: 90%;
+    margin-left: 60px;
+    background-color: #fff;
+    display: block;
+    margin-top: 10px;
+}
+
+.box {
+    display: flex;
+}
+
+.img-main {
+    margin-left: 20%;
+}
+
+
+
+
+
+
+
+
+
+
+
