@@ -16,10 +16,10 @@
                 <h2>Raie Portfólio</h2>
             </div>
             <div class="menu-nav">
-                <a href="#home">Home</a> 
-                <a href="#sobre">Sobre mim</a> 
-                <a href="#projetos">Projetos</a> 
-                <a href="#contato">Contato</a> 
+                <a href="#home" class="home">Home</a> 
+                <a href="#sobre" class="sobre1">Sobre mim</a> 
+                <a href="#projetos" class="projetos">Projetos</a> 
+                <a href="#contato" class="contato">Contato</a> 
             </div>
         </nav>
     </header>
@@ -42,12 +42,12 @@
 
                     <div class="button-main">
                         <a href="https://github.com/Thaisraie" target="_blank" class="botao">
-                            <img src="image/github.png" alt="">
+                            <img src="image/github.png" class="github-icon" alt="">
                             GitHub
                         </a>
             
                         <a href="https://www.linkedin.com/in/thaisqusi/" target="_blank" class="botao">
-                            <img src="image/linkedin.png" alt="">
+                            <img src="image/linkedin.png" class="linkedin-icon" alt="">
                             Linkedin
                         </a>
                     </div>
@@ -70,7 +70,7 @@
                 </div>
                 
                 <div class="sobre-secao">
-                    <h2>Olá! 👋</h2>
+                    <h2 class="ola">Olá! 👋</h2>
                 <p>Sou um estudante de tecnologia com foco na área de desenvolvimento full stack. A minha paixão por tecnologia vai além da simples curiosidade; é uma verdadeira dedicação a descobrir as infinitas possibilidades que a programação oferece. Adoro ver uma ideia sair do papel e ganhar forma, criando algo real e tangível. Desenvolver soluções inovadoras é o que me motiva diariamente, pois sei que através da tecnologia posso conectar pessoas e ideias em todo o mundo. Acredito que o desenvolvimento de software é uma forma poderosa de transformar o futuro, e estou sempre em busca de novos desafios para melhorar e expandir as minhas habilidades!</p>
                 
                 <div class="botao-sobre">
@@ -89,8 +89,9 @@
                 <div class="front-end">
 
                     <div class="descricao-card">
-                        <img src="image/html.png" alt="Ícone HTML" width="40px" class="icon">
-                        <img src="image/html2.png" alt="Ícone HTML" width="39px" class="icon1">
+                        
+                            <img src="image/html2.png" alt="Ícone HTML" width="39px" class="icon-front">
+
                         <h3>Front-end</h3>
                     </div>
                     <span></span>
@@ -127,9 +128,8 @@
 
                 <div class="framework">
                     
-                    <div class="descricao-card3">
-                        <img src="image/biblioteca.png" width="50px">
-                        <img src="image/biblioteca1.png" width="50px">
+                    <div class="descricao-card">
+                        <img src="image/biblioteca1.png" width="50px" class="icon-framework">
                         <h3>Framework</h3>
                     </div>
                     <span></span>
@@ -145,40 +145,39 @@
             </div>
 
             <article id="projetos">
-                <h2>Projetos</h2>
-                <fieldset>
-                    <legend>Projeto AgroComPartilha</legend>
-                    <a href="https://main--agrocompartilha.netlify.app/">
+                <h2 class="titulo-projetos" >Projetos</h2>
+
+<div class="projeto">
+                    <p class="titulo-projeto">Projeto AgroComPartilha</p>
+                    <a target="_blank" href="https://github.com/PI-AgroComPartilha">
                         <img src="https://ik.imagekit.io/mnz3yzqzot/oie_transparent%20(10).png?updatedAt=1717621122003" alt="Logo do site Agrocompartilha">
                     </a>
                     <p>Uma plataforma de serviço desenvolvida com base na ODS-02 para apoiar pequenos agricultores e promover a erradicação da fome.</p>
-                    <a href="https://github.com/PI-AgroComPartilha" target="_blank">
-                        <button>Mais informações</button>
-                    </a>
+                    <div class="button-projeto">
+                        <button><a href="https://main--agrocompartilha.netlify.app/" target="_blank">
+                            Mais informações
+                        </a></button>
+                    </div>
+                </div>
+                
                 </fieldset>
             </article>
 
             <section id="contato">
-                <h2>Entre em contato</h2>
-                <form action="#">
+                <h2 class="titulo-contato">Entre em contato</h2>
+                <form action="#" class="formulario">
+                   <div class="infos">
                     <label for="email">E-mail</label>
-                    <br>
-                    <input type="email" name="email" id="email" required="required">
-                    <br><br>
-                    <label for="assunto">Assunto</label>
-                    <br>
+                    <input type="email" name="email" id="email" required>
+                    <label for="assunto">Assunto</label>   
                     <input type="text" name="assunto" id="assunto">
-                    <br><br>
-                    <label for="mensagem">Mensagem</label>
-                    <br>
-                    <textarea name="mensagem" id="mensagem" required="required">Digite o conteúdo sobre o assunto.</textarea>
-                    <br><br>
-                    <input type="submit" value="Enviar">
+                    <label for="mensagem">Mensagem</label>   
+                    <textarea name="mensagem" id="mensagem" required>Digite o conteúdo sobre o assunto.</textarea>
+                   </div>
+                    <input type="submit" class="button-submit" value="Enviar">
                 </form>
             </section>
 
-        <br>
-        <hr>
         <footer>
             <small>Thais Siqueira - 2024</a> | &copy; Todos os direitos reservados</small>
         </footer>
