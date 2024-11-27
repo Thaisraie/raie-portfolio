@@ -15,40 +15,46 @@ body {
     user-select: none;
 }
 
-header {
-    width: 100%;
-    background-color: #ffffff7e;
-    position: fixed; 
-    top: 0; 
-    left: 0; 
-    width: 100%;
-    z-index: 1000;
+.container {
+    max-width: 1280px;
+    margin: auto;
 }
 
-
-nav {
-    display: flex;
-    padding-bottom: 15px;
-    padding-top: 15px;
+.flex {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.titulo-nav {
-    padding-left: 2px;
-    display: flex;
-    align-items: center;
+header {
+    width: 100%;
+    padding: 40px 4%;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
-.titulo-nav > h2 {
-    color: #000000;
+header ul {
+    list-style-type: none;
 }
 
-.menu-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+header ul li {
+    display: inline-block;
+    margin: 0 40px;
+}
+
+header nav ul li a:hover {
+    background-color: #0000001a;
+    border-radius: 22px;
+    transition: 1.0s ease;
+}
+
+.flex h2 {
+color: #FFF1D0;
+}
+
+header.rolagem {
+    background-color: #ffffff57;
 }
 
 .home, .sobre1, .projetos, .contato {
@@ -56,12 +62,6 @@ nav {
     text-decoration: none;
     padding-left:  12px;
     padding-right:  12px;
-}
-
-.menu-nav > a:hover {
-    background-color: #0000001a;
-    border-radius: 22px;
-    transition: 1.0s ease;
 }
 
 h1 {
@@ -333,6 +333,59 @@ ul > li {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* cards */
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.card h2 {
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+.card p {
+    font-size: 18px;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+.card:hover {
+    transform: translateY(-10px);
 }
 
 button {
