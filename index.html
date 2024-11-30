@@ -174,30 +174,26 @@
                                 Mais informações
                             </a></button>
                     </div>
-                </div>
 
-                <div class="container">
-                    <h1>Produtos</h1>
                     
-                    <div id="cards-container" class="cards-container"></div>
                 </div>
-
-
 
             </article>
 
             <section id="contato">
                 <h2 class="titulo-contato">Entre em contato</h2>
-                <form action="#" class="formulario">
+                <form method="post" action="https://api.staticforms.xyz/submit" class="formulario">
                     <div class="infos">
                         <label for="email">E-mail</label>
                         <input type="email" name="email" id="email" required>
                         <label for="assunto">Assunto</label>
-                        <input type="text" name="assunto" id="assunto">
-                        <label for="mensagem">Mensagem</label>
-                        <textarea name="mensagem" id="mensagem" required>Digite o conteúdo sobre o assunto.</textarea>
+                        <input type="text" name="subject" id="assunto">
+                        <label for="message">Mensagem</label>
+                        <textarea name="message" id="mensagem" required cols="30" rows="10">Digite o conteúdo sobre o assunto.</textarea>
                     </div>
                     <input type="submit" class="button-submit" value="Enviar">
+                    <input type="hidden" name="accessKey" value="1d2c1b96-64a1-4db3-80af-3416ba1e1108">
+                    <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/raie-portfolio/index.html">
                 </form>
             </section>
 
